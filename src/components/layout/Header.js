@@ -20,6 +20,19 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Prevent scrolling when mobile menu is open
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -28,14 +41,10 @@ const Header = () => {
     <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="logo-container">
-          <Link to="/">
+          <Link to="/" onClick={() => setMobileMenuOpen(false)}>
             <img src={TalendyLogo} alt="Talendy" />
           </Link>
         </div>
-        
-        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-          <span className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}></span>
-        </button>
         
         <nav className={`main-nav ${mobileMenuOpen ? 'active' : ''}`}>
           <ul>
@@ -46,16 +55,29 @@ const Header = () => {
             <li><Link to="/news" onClick={() => setMobileMenuOpen(false)}>News</Link></li>
             <li><Link to="/faq" onClick={() => setMobileMenuOpen(false)}>FAQ</Link></li>
             <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link></li>
+            <li className="mobile-only"><Link to="/for-candidates" onClick={() => setMobileMenuOpen(false)}>For Candidates</Link></li>
+            <li className="mobile-only"><Link to="/download" onClick={() => setMobileMenuOpen(false)}>For Companies</Link></li>
           </ul>
         </nav>
         
-        <div className="cta-buttons">
-          <Link to="/for-candidates" className="candidate-btn">
-            <span>For Candidates</span>
-          </Link>
-          <Link to="/download" className="companies-btn">
-            <span>For Companies</span>
-          </Link>
+        <div className="header-right">
+          <div className="cta-buttons desktop-only">
+            <Link to="/for-candidates" className="candidate-btn">
+              <span>For Candidates</span>
+            </Link>
+            <Link to="/download" className="companies-btn">
+              <span>For Companies</span>
+            </Link>
+          </div>
+          
+          <button 
+            className="mobile-menu-toggle" 
+            onClick={toggleMobileMenu}
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            <span className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}></span>
+          </button>
         </div>
       </div>
     </header>

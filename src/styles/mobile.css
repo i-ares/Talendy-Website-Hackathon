@@ -1,0 +1,202 @@
+/* Mobile-specific utility classes */
+
+/* Hide elements on mobile */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Hide elements on desktop */
+@media (min-width: 769px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* Touch-friendly spacing for mobile */
+@media (max-width: 768px) {
+  .touch-spacing > * {
+    margin-bottom: 16px;
+  }
+  
+  .touch-spacing > *:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Increase tap targets */
+  .touch-friendly a,
+  .touch-friendly button {
+    padding: 12px;
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Mobile-first grid system */
+.mobile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .mobile-grid.sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-grid.md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mobile-grid.md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-grid.lg-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mobile-grid.lg-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .mobile-grid.lg-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mobile-specific text alignment */
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .text-left-mobile {
+    text-align: left !important;
+  }
+  
+  .text-right-mobile {
+    text-align: right !important;
+  }
+}
+
+/* Mobile-specific padding adjustments */
+@media (max-width: 768px) {
+  .mobile-px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .mobile-py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .mobile-p-0 {
+    padding: 0 !important;
+  }
+  
+  .mobile-px-2 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  
+  .mobile-py-2 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+  
+  .mobile-p-2 {
+    padding: 8px !important;
+  }
+}
+
+/* Mobile-specific margin adjustments */
+@media (max-width: 768px) {
+  .mobile-mx-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .mobile-my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .mobile-m-0 {
+    margin: 0 !important;
+  }
+  
+  .mobile-mt-2 {
+    margin-top: 8px !important;
+  }
+  
+  .mobile-mb-2 {
+    margin-bottom: 8px !important;
+  }
+}
+
+/* Mobile-specific flex adjustments */
+@media (max-width: 768px) {
+  .flex-column-mobile {
+    flex-direction: column !important;
+  }
+  
+  .flex-row-mobile {
+    flex-direction: row !important;
+  }
+  
+  .items-center-mobile {
+    align-items: center !important;
+  }
+  
+  .justify-center-mobile {
+    justify-content: center !important;
+  }
+}
+
+/* Fixed bottom navigation for mobile */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 10px 0;
+    justify-content: space-around;
+  }
+  
+  .mobile-bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+  }
+  
+  .mobile-bottom-nav-item.active {
+    color: #2563eb;
+  }
+  
+  /* Add padding to body to account for fixed bottom nav */
+  body.has-bottom-nav {
+    padding-bottom: 60px;
+  }
+} 

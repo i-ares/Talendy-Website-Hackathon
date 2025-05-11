@@ -1,9 +1,12 @@
 .download-page {
   padding: 0 0 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .download-page .hero-section {
-  background-color: #f0f4ff;
+  background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
   padding: 100px 0 60px;
   text-align: center;
   margin-bottom: 60px;
@@ -23,29 +26,112 @@
 }
 
 .download-content {
-  max-width: 1100px;
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .download-content .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 40px;
   width: 100%;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .download-form-container {
-  flex: 1;
-  min-width: 300px;
   background-color: white;
-  padding: 30px;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.deck-preview {
+  background-color: #f9fafb;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.auth-container {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.auth-tabs {
+  display: flex;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.auth-tab.active {
+  color: #2563eb;
+}
+
+.auth-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2563eb;
+}
+
+.auth-form {
+  width: 100%;
+}
+
+.auth-form .form-group {
+  margin-bottom: 20px;
+}
+
+.auth-form .form-group:last-of-type {
+  margin-bottom: auto;
+}
+
+.auth-btn {
+  background-color: #2563eb;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #1d4ed8;
 }
 
 .download-form-container h2 {
@@ -123,14 +209,6 @@
   text-decoration: underline;
 }
 
-.deck-preview {
-  flex: 1;
-  min-width: 300px;
-  background-color: #f9fafb;
-  padding: 30px;
-  border-radius: 8px;
-}
-
 .deck-preview h3 {
   color: #1e3a8a;
   margin-bottom: 20px;
@@ -190,22 +268,169 @@
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* Responsive Breakpoints */
+@media (max-width: 1280px) {
+  .download-content .container {
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    flex: 100%;
+  }
+
+  .auth-container {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 992px) {
   .download-page .hero-section {
-    padding: 80px 20px 40px;
+    padding: 90px 0 50px;
+    margin-bottom: 40px;
   }
   
   .download-page h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+  }
+  
+  .download-content {
+    padding: 0 30px;
+  }
+  
+  .download-form-container,
+  .auth-container,
+  .deck-preview {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .download-page {
+    padding-top: 70px; /* Account for fixed header */
+  }
+  
+  .download-page .hero-section {
+    padding: 60px 20px 40px;
+    margin-bottom: 30px;
+  }
+  
+  .download-page h1 {
+    font-size: 2.2rem;
+  }
+  
+  .download-page .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .download-content {
+    padding: 0 20px;
   }
   
   .download-content .container {
     flex-direction: column;
+    gap: 30px;
+  }
+  
+  .main-content {
+    gap: 30px;
   }
   
   .download-form-container,
-  .deck-preview,
-  .success-message {
+  .auth-container,
+  .deck-preview {
     width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  .download-form-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .download-form-container > p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    padding: 10px 12px;
+  }
+  
+  .deck-preview h3 {
+    font-size: 1.3rem;
+  }
+  
+  .deck-preview li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .success-message {
+    padding: 30px 20px;
+  }
+  
+  .success-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .success-message h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-page .hero-section {
+    padding: 50px 15px 30px;
+  }
+  
+  .download-page h1 {
+    font-size: 1.8rem;
+  }
+  
+  .download-page .subtitle {
+    font-size: 1rem;
+  }
+  
+  .download-content {
+    padding: 0 15px;
+  }
+  
+  .download-form-container,
+  .auth-container,
+  .deck-preview {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .auth-tabs {
+    margin-bottom: 20px;
+  }
+  
+  .auth-tab {
+    padding: 10px 5px;
+    font-size: 0.9rem;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  
+  .download-btn,
+  .auth-btn {
+    padding: 10px;
+    font-size: 0.9rem;
   }
 } 

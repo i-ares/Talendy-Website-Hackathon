@@ -12,8 +12,10 @@ import NewsPage from './pages/NewsPage';
 import DownloadPage from './pages/DownloadPage';
 import ContactPage from './pages/ContactPage';
 import CandidatePage from './pages/CandidatePage';
+import './styles/variables.css';
 import './App.css';
 import './styles/typography.css';
+import './styles/mobile.css';
 
 function App() {
   return (
