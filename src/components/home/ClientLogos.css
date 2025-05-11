@@ -1,0 +1,47 @@
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
+    margin: var(--spacing-xl) 0;
+  }
+  
+  .logo-item {
+    flex: 0 0 calc(16.666% - var(--spacing-xl));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .logo-item:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  
+  .logo-item img {
+    max-width: 100%;
+    max-height: 60px;
+  }
+  
+  @media (max-width: 1024px) {
+    .logo-item {
+      flex: 0 0 calc(25% - var(--spacing-xl));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-item {
+      flex: 0 0 calc(33.333% - var(--spacing-xl));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-item {
+      flex: 0 0 calc(50% - var(--spacing-xl));
+    }
+  }
+  

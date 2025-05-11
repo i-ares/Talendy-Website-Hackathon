@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Enhanced 3D Cube -->
+  <!-- Back face -->
+  <path d="M45 20l15-5 15 5-15 5z" fill="#E2E8F0"/>
+  <!-- Right face -->
+  <path d="M75 20l-5 20-15 5v-20z" fill="#2563EB"/>
+  <!-- Left face -->
+  <path d="M45 20v20l-5-20l15-5z" fill="#1E40AF"/>
+  <!-- Front face -->
+  <path d="M45 40l15 5 15-5-15-5z" fill="#2563EB" opacity="0.9"/>
+  <!-- Top face -->
+  <path d="M45 20l15 5 15-5-15-5z" fill="#1E40AF" opacity="0.9"/>
+  <!-- Edge highlights -->
+  <path d="M45 20v20 M75 20v20 M45 20l15-5 M75 20l-15-5 M45 40l15 5 M75 40l-15 5" 
+        stroke="white" stroke-width="0.5" opacity="0.5"/>
+  <!-- Data points -->
+  <circle cx="45" cy="20" r="1.5" fill="white"/>
+  <circle cx="75" cy="20" r="1.5" fill="white"/>
+  <circle cx="60" cy="15" r="1.5" fill="white"/>
+  <circle cx="45" cy="40" r="1.5" fill="white"/>
+  <circle cx="75" cy="40" r="1.5" fill="white"/>
+  <circle cx="60" cy="45" r="1.5" fill="white"/>
+  <!-- Company name with enhanced styling -->
+  <path d="M80 15h85v30H80z" fill="#1E40AF"/>
+  <text x="90" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">CUBE</text>
+  <!-- Dimension lines -->
+  <path d="M170 20l10 0 M170 30l10 0 M170 40l10 0" stroke="#2563EB" stroke-width="0.5"/>
+  <text x="182" y="23" fill="#2563EB" font-family="monospace" font-size="6">X</text>
+  <text x="182" y="33" fill="#2563EB" font-family="monospace" font-size="6">Y</text>
+  <text x="182" y="43" fill="#2563EB" font-family="monospace" font-size="6">Z</text>
+</svg> 

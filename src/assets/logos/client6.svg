@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base sphere -->
+  <circle cx="50" cy="30" r="15" fill="#E2E8F0"/>
+  <circle cx="50" cy="30" r="12" fill="#2563EB" opacity="0.8"/>
+  <!-- Orbital rings -->
+  <ellipse cx="50" cy="30" rx="15" ry="6" stroke="#1E40AF" stroke-width="0.5" fill="none"/>
+  <ellipse cx="50" cy="30" rx="15" ry="6" stroke="#1E40AF" stroke-width="0.5" fill="none" 
+           transform="rotate(60 50 30)"/>
+  <ellipse cx="50" cy="30" rx="15" ry="6" stroke="#1E40AF" stroke-width="0.5" fill="none" 
+           transform="rotate(-60 50 30)"/>
+  <!-- Particle effects -->
+  <circle cx="50" cy="30" r="8" fill="#1E40AF" opacity="0.6"/>
+  <circle cx="50" cy="30" r="4" fill="white"/>
+  <!-- Orbital particles -->
+  <circle cx="65" cy="30" r="1.5" fill="white"/>
+  <circle cx="35" cy="30" r="1.5" fill="white"/>
+  <circle cx="50" cy="15" r="1.5" fill="white"/>
+  <circle cx="50" cy="45" r="1.5" fill="white"/>
+  <!-- Particle trails -->
+  <path d="M50 15c8 0 15 7 15 15 M50 45c-8 0-15-7-15-15" 
+        stroke="white" stroke-width="0.5" stroke-dasharray="1 2"/>
+  <!-- Company name with enhanced styling -->
+  <path d="M80 15h85v30H80z" fill="#1E40AF"/>
+  <text x="90" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">SPHERE</text>
+  <!-- Energy waves -->
+  <path d="M170 25c5 0 5 10 0 10 M175 22c5 0 5 16 0 16 M180 19c5 0 5 22 0 22" 
+        stroke="#2563EB" stroke-width="0.5" fill="none"/>
+</svg> 

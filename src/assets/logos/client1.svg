@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background layer -->
+  <rect x="35" y="15" width="30" height="30" fill="#E2E8F0" rx="4"/>
+  <!-- Circuit board pattern -->
+  <path d="M38 18h24v24H38z" fill="#2563EB"/>
+  <!-- Detailed circuit traces -->
+  <path d="M40 20h4v4h-4z M48 20h4v4h-4z M56 20h4v4h-4z" fill="#1E40AF"/>
+  <path d="M42 22h6 M50 22h6 M44 24v6 M52 24v6" stroke="white" stroke-width="0.5"/>
+  <path d="M40 28h4v4h-4z M48 28h4v4h-4z M56 28h4v4h-4z" fill="#1E40AF"/>
+  <path d="M42 30h6 M50 30h6 M44 32v6 M52 32v6" stroke="white" stroke-width="0.5"/>
+  <path d="M40 36h4v4h-4z M48 36h4v4h-4z M56 36h4v4h-4z" fill="#1E40AF"/>
+  <!-- CPU-like center -->
+  <rect x="44" y="24" width="12" height="12" fill="#1E40AF" rx="2"/>
+  <path d="M46 28h8v4h-8z" fill="#E2E8F0"/>
+  <!-- Company name with enhanced styling -->
+  <path d="M70 15h95v30H70z" fill="#1E40AF"/>
+  <text x="75" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">TECH ONE</text>
+  <!-- Binary pattern -->
+  <text x="170" y="25" fill="#2563EB" font-family="monospace" font-size="6">1010</text>
+  <text x="170" y="35" fill="#2563EB" font-family="monospace" font-size="6">0101</text>
+  <text x="170" y="45" fill="#2563EB" font-family="monospace" font-size="6">1100</text>
+</svg> 

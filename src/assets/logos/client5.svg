@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Crystal base -->
+  <path d="M35 30l15-15h15l-15 15z" fill="#E2E8F0"/>
+  <!-- Crystal faces -->
+  <path d="M50 15l15 15v15l-15-15z" fill="#2563EB" opacity="0.8"/>
+  <path d="M35 30v15h15l-15-15z" fill="#1E40AF" opacity="0.8"/>
+  <!-- Light refraction -->
+  <path d="M40 30l10-10 M45 35l10-10 M50 40l10-10" 
+        stroke="white" stroke-width="0.5" opacity="0.7"/>
+  <!-- Crystal edges -->
+  <path d="M35 30l15-15h15l-15 15v15h-15z" stroke="#2563EB" stroke-width="0.5" fill="none"/>
+  <!-- Light beams -->
+  <path d="M35 30l5-15 M65 15l5 15 M50 45l-5 5" 
+        stroke="#2563EB" stroke-width="1" stroke-dasharray="1 2"/>
+  <!-- Sparkles -->
+  <circle cx="40" cy="25" r="1" fill="white"/>
+  <circle cx="45" cy="20" r="1" fill="white"/>
+  <circle cx="50" cy="25" r="1" fill="white"/>
+  <circle cx="55" cy="30" r="1" fill="white"/>
+  <!-- Company name with enhanced styling -->
+  <path d="M80 15h85v30H80z" fill="#1E40AF"/>
+  <text x="90" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">PRISM</text>
+  <!-- Light spectrum -->
+  <path d="M170 20h12 M170 27h12 M170 34h12" stroke="#2563EB" stroke-width="2" opacity="0.8"/>
+  <path d="M170 23h12 M170 30h12 M170 37h12" stroke="#1E40AF" stroke-width="2" opacity="0.6"/>
+</svg> 

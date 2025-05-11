@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Network background -->
+  <circle cx="50" cy="30" r="15" fill="#E2E8F0"/>
+  <!-- Network mesh -->
+  <path d="M40 30l10-10 10 10-10 10z" fill="#2563EB" opacity="0.8"/>
+  <path d="M50 20l10 10-10 10-10-10z" fill="#1E40AF" opacity="0.8"/>
+  <!-- Connection nodes -->
+  <circle cx="40" cy="30" r="3" fill="#2563EB"/>
+  <circle cx="50" cy="20" r="3" fill="#2563EB"/>
+  <circle cx="60" cy="30" r="3" fill="#2563EB"/>
+  <circle cx="50" cy="40" r="3" fill="#2563EB"/>
+  <!-- Data flow lines -->
+  <path d="M40 30l10-10 M50 20l10 10 M60 30l-10 10 M50 40l-10-10" 
+        stroke="#1E40AF" stroke-width="1" stroke-dasharray="2 2"/>
+  <!-- Pulse animations -->
+  <circle cx="50" cy="30" r="2" fill="white"/>
+  <circle cx="50" cy="30" r="6" stroke="#2563EB" stroke-width="0.5" fill="none"/>
+  <circle cx="50" cy="30" r="9" stroke="#2563EB" stroke-width="0.5" fill="none"/>
+  <!-- Company name with enhanced styling -->
+  <path d="M75 15h90v30H75z" fill="#1E40AF"/>
+  <text x="85" y="35" fill="white" font-family="Arial" font-size="18" font-weight="bold">NEXUS</text>
+  <!-- Network metrics -->
+  <text x="170" y="25" fill="#2563EB" font-family="monospace" font-size="6">NODE</text>
+  <text x="170" y="35" fill="#2563EB" font-family="monospace" font-size="6">MESH</text>
+  <text x="170" y="45" fill="#2563EB" font-family="monospace" font-size="6">SYNC</text>
+</svg> 

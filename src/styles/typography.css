@@ -1,0 +1,148 @@
+/* Typography Colors */
+:root {
+  /* Dark sections (gradient backgrounds) */
+  --text-light-primary: white;
+  --text-light-secondary: rgba(255, 255, 255, 0.9);
+  --text-light-tertiary: rgba(255, 255, 255, 0.7);
+
+  /* Light sections */
+  --text-dark-primary: #1e3a8a;  /* Dark blue */
+  --text-dark-secondary: #2563eb; /* Medium blue */
+  --text-dark-tertiary: #4b5563; /* Gray */
+}
+
+/* Headings on dark backgrounds */
+.dark-section h1,
+.dark-section h2,
+.dark-section h3 {
+  color: var(--text-light-primary);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-section p {
+  color: var(--text-light-secondary);
+}
+
+.dark-section .subtitle,
+.dark-section .description {
+  color: var(--text-light-secondary);
+}
+
+/* Headings on light backgrounds */
+.light-section h1,
+.light-section h2,
+.light-section h3 {
+  color: var(--text-dark-primary);
+}
+
+.light-section p {
+  color: var(--text-dark-tertiary);
+}
+
+.light-section .subtitle,
+.light-section .description {
+  color: var(--text-dark-tertiary);
+}
+
+/* Cards on dark backgrounds */
+.dark-section .card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.dark-section .card h3 {
+  color: var(--text-light-primary);
+}
+
+.dark-section .card p {
+  color: var(--text-light-secondary);
+}
+
+/* Cards on light backgrounds */
+.light-section .card {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.light-section .card h3 {
+  color: var(--text-dark-primary);
+}
+
+.light-section .card p {
+  color: var(--text-dark-tertiary);
+}
+
+/* Links */
+.dark-section a:not(.button) {
+  color: var(--text-light-secondary);
+}
+
+.light-section a:not(.button) {
+  color: var(--text-dark-secondary);
+}
+
+/* Stats and numbers */
+.stat-number {
+  color: var(--text-dark-secondary);
+  font-weight: 700;
+}
+
+.dark-section .stat-number {
+  color: var(--text-light-primary);
+}
+
+/* Labels and metadata */
+.label,
+.meta {
+  color: var(--text-dark-tertiary);
+}
+
+.dark-section .label,
+.dark-section .meta {
+  color: var(--text-light-tertiary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--dark);
+  }
+  
+  h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  h2 {
+    font-size: var(--text-3xl);
+  }
+  
+  h3 {
+    font-size: var(--text-2xl);
+  }
+  
+  h4 {
+    font-size: var(--text-xl);
+  }
+  
+  p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+  }
+  
+  .subtitle {
+    font-size: var(--text-xl);
+    color: var(--medium);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--primary-dark);
+  }
+  

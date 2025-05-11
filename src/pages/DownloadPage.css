@@ -1,0 +1,211 @@
+.download-page {
+  padding: 0 0 60px;
+}
+
+.download-page .hero-section {
+  background-color: #f0f4ff;
+  padding: 100px 0 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.download-page h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.download-page .subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.download-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-content .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.download-form-container {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.download-form-container h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.download-form-container > p {
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.download-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.download-btn {
+  background-color: #2563eb;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.privacy-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.privacy-note a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.privacy-note a:hover {
+  text-decoration: underline;
+}
+
+.deck-preview {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9fafb;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.deck-preview h3 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.deck-preview ul {
+  padding-left: 20px;
+}
+
+.deck-preview li {
+  margin-bottom: 15px;
+  color: #4b5563;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.success-message {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 auto 20px;
+}
+
+.success-message h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.success-message p {
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.success-message .download-btn {
+  display: inline-block;
+  width: auto;
+  padding: 12px 30px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .download-page .hero-section {
+    padding: 80px 20px 40px;
+  }
+  
+  .download-page h1 {
+    font-size: 2.5rem;
+  }
+  
+  .download-content .container {
+    flex-direction: column;
+  }
+  
+  .download-form-container,
+  .deck-preview,
+  .success-message {
+    width: 100%;
+  }
+} 

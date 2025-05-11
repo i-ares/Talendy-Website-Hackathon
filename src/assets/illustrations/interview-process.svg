@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#F3F4F6" rx="20"/>
+  
+  <!-- Video Call Window -->
+  <rect x="30" y="40" width="140" height="120" fill="white" stroke="#2563EB" stroke-width="2" rx="10"/>
+  
+  <!-- Participant Windows -->
+  <rect x="40" y="50" width="60" height="45" fill="#DBEAFE" rx="5"/>
+  <rect x="40" y="105" width="60" height="45" fill="#DBEAFE" rx="5"/>
+  <rect x="110" y="50" width="50" height="100" fill="#93C5FD" rx="5"/>
+  
+  <!-- Camera Icon -->
+  <circle cx="65" cy="72" r="8" fill="#2563EB"/>
+  <path d="M85 68L95 63V82L85 77" fill="#2563EB"/>
+  
+  <!-- Mic Icon -->
+  <rect x="61" y="120" width="8" height="15" fill="#2563EB" rx="4"/>
+  <path d="M55 130C55 135 60 140 65 140C70 140 75 135 75 130" stroke="#2563EB" stroke-width="2"/>
+  
+  <!-- Status Indicators -->
+  <circle cx="45" cy="55" r="3" fill="#10B981"/>
+  <circle cx="45" cy="110" r="3" fill="#10B981"/>
+  <circle cx="115" cy="55" r="3" fill="#10B981"/>
+</svg> 

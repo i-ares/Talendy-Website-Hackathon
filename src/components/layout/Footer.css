@@ -1,0 +1,128 @@
+.site-footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+  }
+  
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: var(--spacing-md);
+    white-space: nowrap;
+  }
+  
+  .footer-logo {
+    height: 40px;
+    width: 50px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-right: 0;
+  }
+  
+  .company-name {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 0;
+    margin-left: -5px;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-info a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  /* Ensure logo visibility with specific overrides */
+  .site-footer .footer-info img.footer-logo {
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+  }
+  
+  .footer-info p {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .social-links {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+  
+  .social-links a {
+    color: var(--light);
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-light);
+  }
+  
+  .footer-links h3,
+  .footer-contact h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--text-lg);
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links li {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .footer-links a {
+    color: var(--light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--primary-light);
+  }
+  
+  .footer-contact address {
+    font-style: normal;
+  }
+  
+  .footer-contact p {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-lg);
+    text-align: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

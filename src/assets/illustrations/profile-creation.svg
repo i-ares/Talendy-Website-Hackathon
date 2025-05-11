@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#F3F4F6" rx="20"/>
+  
+  <!-- Document -->
+  <rect x="40" y="30" width="120" height="140" fill="white" stroke="#2563EB" stroke-width="2" rx="10"/>
+  
+  <!-- Form Lines -->
+  <rect x="60" y="50" width="80" height="8" fill="#DBEAFE" rx="4"/>
+  <rect x="60" y="70" width="60" height="8" fill="#DBEAFE" rx="4"/>
+  <rect x="60" y="90" width="70" height="8" fill="#DBEAFE" rx="4"/>
+  
+  <!-- Checkboxes -->
+  <rect x="60" y="110" width="12" height="12" fill="white" stroke="#2563EB" stroke-width="2" rx="2"/>
+  <rect x="60" y="130" width="12" height="12" fill="#2563EB" rx="2"/>
+  <path d="M62 136L65 139L70 134" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Pencil -->
+  <path d="M150 40L160 30L170 40L160 50L150 40Z" fill="#2563EB"/>
+  <rect x="140" y="40" width="14" height="40" transform="rotate(-45 140 40)" fill="#2563EB"/>
+</svg> 

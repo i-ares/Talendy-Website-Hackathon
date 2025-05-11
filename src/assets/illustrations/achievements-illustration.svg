@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <path d="M0 0h800v400H0z" fill="#F8FAFC"/>
+  <path d="M50 350c200-100 500-100 700 0" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Central Trophy -->
+  <g id="trophy" transform="translate(350,100)">
+    <!-- Trophy Cup -->
+    <path d="M0 0h100v80l-50 20-50-20z" fill="#2563EB"/>
+    <path d="M20 80v40h60v-40" stroke="#2563EB" stroke-width="4" fill="none"/>
+    <rect x="10" y="120" width="80" height="20" fill="#1E40AF"/>
+    <!-- Trophy Base -->
+    <rect x="-10" y="140" width="120" height="10" fill="#1E40AF"/>
+    <!-- Trophy Handles -->
+    <path d="M0 40c-20 0-20 40 0 40" stroke="#1E40AF" stroke-width="4" fill="none"/>
+    <path d="M100 40c20 0 20 40 0 40" stroke="#1E40AF" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- Achievement Icons -->
+  <g id="achievement-icons">
+    <!-- Certificate -->
+    <g transform="translate(100,200)">
+      <rect x="0" y="0" width="60" height="80" fill="#2563EB" opacity="0.8"/>
+      <path d="M10 20h40 M10 40h40 M10 60h40" stroke="white" stroke-width="2"/>
+      <circle cx="30" cy="100" r="15" fill="#1E40AF"/>
+      <path d="M20 95l20 10 M20 105l20-10" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Growth Chart -->
+    <g transform="translate(600,200)">
+      <path d="M0 80l30-60 30-10 30 20" stroke="#2563EB" stroke-width="4" fill="none"/>
+      <circle cx="0" cy="80" r="4" fill="#1E40AF"/>
+      <circle cx="30" cy="20" r="4" fill="#1E40AF"/>
+      <circle cx="60" cy="10" r="4" fill="#1E40AF"/>
+      <circle cx="90" cy="30" r="4" fill="#1E40AF"/>
+    </g>
+  </g>
+  
+  <!-- Stars -->
+  <g id="stars">
+    <path d="M200 50l10 30 30-10-30 10 10 30-10-30-30 10 30-10z" fill="#2563EB" opacity="0.6"/>
+    <path d="M600 50l10 30 30-10-30 10 10 30-10-30-30 10 30-10z" fill="#2563EB" opacity="0.6"/>
+    <path d="M400 300l10 30 30-10-30 10 10 30-10-30-30 10 30-10z" fill="#2563EB" opacity="0.6"/>
+  </g>
+  
+  <!-- Connection Lines -->
+  <path d="M160 240c100-50 400-50 500 0" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- Text Elements -->
+  <g id="text-elements">
+    <text x="100" y="180" fill="#1E40AF" font-family="Arial" font-size="14">Privacy Mark</text>
+    <text x="600" y="180" fill="#1E40AF" font-family="Arial" font-size="14">Growth</text>
+    <text x="400" y="80" fill="#1E40AF" font-family="Arial" font-size="24" font-weight="bold">Achievements</text>
+  </g>
+</svg> 
